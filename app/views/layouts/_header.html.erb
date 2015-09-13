@@ -8,11 +8,12 @@
                 <% if logged_in? %>
                     <li><%= link_to "Users", '#' %></li>
                     <li class="dropdown">
-                        <a hred="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             Account <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><%= link_to "profile", current_user %></li>
+                            <li><%= link_to "show profile", current_user %></li>
+                            <li><%= link_to "update profile", edit_user_path(session[:user_id]) %></li>
                             <li><%= link_to "Settings", '#' %></li>
                             <li>
                                 <%= link_to "Log Out", logout_path, method: "delete" %>
