@@ -1,4 +1,16 @@
 <h1>
-    <%= gravatar_for @user %>
-    <%= @user.name %>
+        <%= gravatar_for @user %>
+        <p><%= @user.name %></p>
 </h1>
+
+
+<div class="container" style="padding:0">
+    <div class="row" style="padding:20px 20%;">
+        <table class="table table-striped table-condensed">
+            <tbody>
+                <tr><td class="col-md-1 col-sm-1"><strong>introduction</strong></td><td class="col-md-4 col-sm-4"><%= @user.introduction %></td>
+                <tr><td class="col-md-1 col-sm-1"><strong>location</strong></td><td class="col-md-4 col-sm-4"><%= @user.locationtext %></td>
+            </tbody>
+        </table>
+    </div>
+</div>
