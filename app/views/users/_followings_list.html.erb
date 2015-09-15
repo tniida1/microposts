@@ -1,4 +1,27 @@
-<li>
-    <%= link_to gravatar_for(following, size: 50), following %>
-    <span class="user"><%= link_to following.name, following %></span>
-</li>
+<div class="col-md-4 col-sm-12" style="padding: 10px">
+    <div class="row">
+        <div class="col-md-12">
+            <%= link_to gravatar_for(following, size: 50), following %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <span class="user"><%= link_to following.name, following %></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <span class="user"><%= following.introduction %></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <span class="user"><%= following.locationtext %></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <span class="user"><%= following.email %></span>
+        </div>  
+    </div>
+</div>
