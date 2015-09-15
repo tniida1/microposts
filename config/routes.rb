@@ -5,13 +5,17 @@ Rails.application.routes.draw do
 
   root to: 'static_pages#home'
   get 'signup',  to: 'users#new'
-  get 'users/:id/following',  to: 'users#following'
-  get 'users/:id/follower',  to: 'users#follower'
   get     'login'   => 'sessions#new'  
   post    'login'   => 'sessions#create'  
   delete  'logout'  => 'sessions#destroy'  
 
-  resources :users
+  resources :users do
+    member do
+      get :followings
+      get :followers
+    end
+  end
+  
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts
   resources :relationships, only: [:create, :destroy]

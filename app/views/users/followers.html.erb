@@ -6,6 +6,11 @@
                 <%= @user.name %>
             </h1>
         </section>
+        <section class="btn_details center-block">
+            <%= button_to "microposts", user_path, method: :get ,class: "btn btn-default" %>
+            <%= button_to "followings", followings_user_path, method: :get ,class: "btn btn-default" %>
+            <%= button_to "followers", followers_user_path, method: :get ,class: "btn btn-default disabled" %>
+        </section>
     </aside>
     <div class="col-md-8">
         <%= render 'follow_form' if logged_in? %>
