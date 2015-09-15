@@ -7,15 +7,15 @@
             </h1>
         </section>
     </aside>
-        <div class="col-md-8">
-            <%= render 'follow_form' if logged_in? %>
-            <% if @followings.any? %>
-                <h3>following users (<%= @followings.count %>)</h3>
-                <div class="row">
-                    <% @followings.each do |following| %>
-                        <%= render partial: 'users/followings_list', locals: { following: following } %>
-                    <% end %>
-                </div>
-            <% end %>
-        </div>
+    <div class="col-md-8">
+        <%= render 'follow_form' if logged_in? %>
+        <% if @followings.any? %>
+            <h3>following users (<%= @followings.count %>)</h3>
+            <div class="row">
+                <% @followings.each do |following| %>
+                    <%= render partial: 'users/followings_list', locals: { following: following } %>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
 </div>

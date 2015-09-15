@@ -1,4 +1,4 @@
-<div class="col-md-6 col-sm-6" style="padding: 10px">
+<div class="followings col-md-6 col-sm-6" style="padding: 10px">
     <div class="row">
         <div class="col-md-12">
             <span class="gravatar"><%= link_to gravatar_for(following, size: 50), following %></span>
@@ -7,12 +7,12 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <span class="introduction"><%= following.introduction %>aaaaaあああああああああああaaaaaあああああああああああaaaaaあああああああああああaaaaaあああああああああああ</span>
+            <div class="introduction"><%= following.introduction %></div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <span class="locationtext"><%= following.locationtext %>iiiiiいいいいいいいいいいいいい</span>
+            <div class="locationtext"><%= following.locationtext %></div>
         </div>
     </div>
 </div>

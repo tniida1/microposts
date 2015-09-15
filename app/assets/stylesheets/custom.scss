@@ -200,36 +200,32 @@ apan.picture {
         padding-top: 0;
     }
     .introduction {
-        display: block;
+        width: 100%;
+        word-wrap: break-word;
     }
     .locationtext {
-        display: block;
+        width: 100%;
+        word-wrap: break-word;
     }
 }
 
 .followers {
-    list-style: none;
     padding: 0;
-    li {
-        padding: 10px 0;
-        border-top: 1px solid #e8e8e8;
+    .gravatar {
+        float:left;
     }
     .user {
-        display: block;
         margin-top: 5em;
         padding-top: 0;
     }
-    .content {
+    .introduction {
         display: block;
-        margin-left: 60px;
-        img {
-            display: block;
-            padding: 5px 0;
-        }
+        word-wrap: break-word;
+        width: 100%;
     }
-    .gravatar {
-        float:left;
-        margin-right: 10px;
-        margin-top: 5px;
+    .locationtext {
+        display: block;
+        word-wrap: break-word;
+        width: 100%;
     }
 }

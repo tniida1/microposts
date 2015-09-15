@@ -11,11 +11,11 @@
         <%= render 'follow_form' if logged_in? %>
         <% if @followers.any? %>
             <h3>follower users (<%= @followers.count %>)</h3>
-            <ol class="followers">
+            <div class="row">
                 <% @followers.each do |follower| %>
                     <%= render partial: 'users/followers_list', locals: { follower: follower } %>
                 <% end %>
-            </ol>
+            </div>
         <% end %>
     </div>
 </div>
