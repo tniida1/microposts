@@ -13,7 +13,6 @@
                 <h3>following users (<%= @followings.count %>)</h3>
                 <div class="row">
                     <% @followings.each do |following| %>
-                        
                         <%= render partial: 'users/followings_list', locals: { following: following } %>
                     <% end %>
                 </div>
