@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <div class="row">
     <aside class="col-md-4">
         <section class="user_info">
@@ -6,6 +6,11 @@
                 <%= gravatar_for @user %>
                 <%= @user.name %>
             </h1>
+        </section>
+        <section class="btn_details">
+            <%= button_to "microposts", user_path, method: :get ,class: "btn btn-default disabled" %>
+            <%= button_to "followings", followings_user_path, method: :get ,class: "btn btn-default"%>
+            <%= button_to "followers", followers_user_path, method: :get ,class: "btn btn-default"%>
         </section>
     </aside>
     <div class="col-md-8">
@@ -16,21 +21,5 @@
                 <%= render @microposts %>
             </ol>
         <% end %>
-=======
-<h1>
-        <%= gravatar_for @user %>
-        <p><%= @user.name %></p>
-</h1>
-
-
-<div class="container" style="padding:0">
-    <div class="row" style="padding:20px 20%;">
-        <table class="table table-striped table-condensed">
-            <tbody>
-                <tr><td class="col-md-1 col-sm-1"><strong>introduction</strong></td><td class="col-md-4 col-sm-4"><%= @user.introduction %></td>
-                <tr><td class="col-md-1 col-sm-1"><strong>location</strong></td><td class="col-md-4 col-sm-4"><%= @user.locationtext %></td>
-            </tbody>
-        </table>
->>>>>>> user-profile
     </div>
 </div>

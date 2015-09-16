@@ -109,8 +109,15 @@ input {
 /* sidebar */
 
 aside {
+  section.btn_details {
+    margin-top: 20px;
+    .btn {
+      margin-bottom: 10px;
+      margin-top: 0px;
+    }
+  }
   section.user_info {
-    margin-top:20px
+    margin-top: 20px
   }
   section {
     padding: 10px 0;
@@ -187,5 +194,59 @@ apan.picture {
     margin-top: 10px;
     input {
         border: 0;
+    }
+}
+
+.followings {
+    padding: 0;
+    .gravatar {
+        float:left;
+    }
+    .user {
+        margin-top: 5em;
+        padding-top: 0;
+    }
+    .introduction {
+        display: block;
+        word-wrap: break-word;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .locationtext {
+        display: block;
+        word-wrap: break-word;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        color: gray;
+        width: 100%;
+        font-size: smaller;
+    }
+}
+
+.followers {
+    padding: 0;
+    .gravatar {
+        float:left;
+    }
+    .user {
+        margin-top: 5em;
+        padding-top: 0;
+    }
+    .introduction {
+        display: block;
+        word-wrap: break-word;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .locationtext {
+        display: block;
+        word-wrap: break-word;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        color: gray;
+        width: 100%;
+        font-size: smaller;
     }
 }
