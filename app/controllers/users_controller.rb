@@ -1,12 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:edit, :update]
   def show # 追加
-<<<<<<< HEAD
     @user = User.find(params[:id])
     @microposts = @user.microposts
-=======
-      @user = User.find(params[:id])
->>>>>>> user-profile
   end
   
   def new
