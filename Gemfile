@@ -51,7 +51,8 @@ group :development, :test do
   gem 'spring'
   
   gem 'carrierwave'
-  gem 'rmagick'
+  # http://d.hatena.ne.jp/mercystage/20130302/1362192512
+  gem "rmagick", :require => 'RMagick'
   gem 'cloudinary'
 
 end
