@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module Microposts
   class Application < Rails::Application
+    # https://github.com/carrierwaveuploader/carrierwave/issues/399#issuecomment-51422423
+    # http://qiita.com/h5y1m141@github/items/97e1941086c7f9f229ac
+
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
