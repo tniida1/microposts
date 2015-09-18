@@ -3,7 +3,6 @@
     <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
     <span class="content"><%= micropost.content %></span>
     <% if Rails.env.production? %>
-            <%= micropost.image %>
             <%= image_tag micropost.image.thumb.url %>
     <% else %>
         <% if micropost.image? %>
