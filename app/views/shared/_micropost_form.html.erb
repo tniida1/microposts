@@ -2,8 +2,8 @@
     <%= render 'shared/error_messages', object: f.object %>
     <div class="field">
         <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+        <%= image_tag @micropost.image.thumb.url if @micropost.image %>
         <%= f.label :image %>
-        <%= image_tag @micropost.image.thumb.url if @micropost.image? %>
         <%= f.file_field :image %>
         <%= f.hidden_field :image_cache %>
     </div>
