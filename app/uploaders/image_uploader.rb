@@ -82,10 +82,10 @@ class ImageUploader < CarrierWave::Uploader::Base
   #end
   
   #set filename using timestamp
-  def filename
-    time = Time.now
-    name = time.strftime('%Y%m%d%H%M%S') + '.jpg'
-    name.downcase
+  #def filename
+  #  time = Time.now
+  #  name = time.strftime('%Y%m%d%H%M%S') + '.jpg'
+  #  name.downcase
   end
 
 end
