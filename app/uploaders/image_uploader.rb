@@ -16,6 +16,11 @@ class ImageUploader < CarrierWave::Uploader::Base
     include Cloudinary::CarrierWave
   else
     storage :file
+    def filename
+      time = Time.now
+      name = time.strftime('%Y%m%d%H%M%S') + '.jpg'
+      name.downcase
+    end
   end
 
   def public_id
@@ -82,10 +87,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   #end
   
   #set filename using timestamp
-  #def filename
-  #  time = Time.now
-  #  name = time.strftime('%Y%m%d%H%M%S') + '.jpg'
-  #  name.downcase
-  end
+  
+
 
 end
